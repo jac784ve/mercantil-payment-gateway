@@ -1,0 +1,20 @@
+/* assets/css/mercantil-admin.css */
+.wrap h1 {
+    color: #007acc;
+    margin-bottom: 20px;
+}
+
+.form-table th {
+    width: 200px;
+    padding: 15px 10px 15px 0;
+}
+
+.form-table input[type="text"],
+.form-table input[type="password"] {
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-table input[type="checkbox"] {
+    margin-top: 5px;
+}

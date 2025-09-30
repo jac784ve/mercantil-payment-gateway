@@ -1,0 +1,93 @@
+/* assets/css/mercantil-checkout.css */
+.mercantil-checkout-form {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    margin: 15px 0;
+}
+
+.mercantil-checkout-form .form-row {
+    margin-bottom: 15px;
+}
+
+.mercantil-checkout-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #495057;
+}
+
+.mercantil-checkout-form input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e9ecef;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.mercantil-checkout-form input:focus {
+    border-color: #007acc;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 122, 204, 0.1);
+}
+
+.mercantil-checkout-form input.mercantil-valid {
+    border-color: #28a745;
+}
+
+.mercantil-checkout-form input.mercantil-invalid {
+    border-color: #dc3545;
+}
+
+.mercantil-field-error {
+    display: block;
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.mercantil-checkout-error {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+/* Estados de carga */
+.mercantil-processing .blockUI.blockOverlay {
+    background: rgba(255, 255, 255, 0.9) !important;
+}
+
+.mercantil-processing .blockUI.blockOverlay::before {
+    content: 'Procesando pago...';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #007acc;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .mercantil-checkout-form {
+        padding: 15px;
+        margin: 10px 0;
+    }
+    
+    .mercantil-checkout-form .form-row-first,
+    .mercantil-checkout-form .form-row-last {
+        float: none;
+        width: 100%;
+    }
+}
